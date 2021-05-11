@@ -196,7 +196,7 @@ U 1 1 606A0C8D
 P 8750 1850
 F 0 "J102" H 8722 1732 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 8722 1823 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8750 1850 50  0001 C CNN
+F 2 "Connector_Wago:Wago_734-132_1x02_P3.50mm_Vertical" H 8750 1850 50  0001 C CNN
 F 3 "~" H 8750 1850 50  0001 C CNN
 	1    8750 1850
 	-1   0    0    1   
@@ -207,7 +207,7 @@ U 1 1 606A1EA9
 P 10250 1850
 F 0 "J103" H 10222 1732 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 10222 1823 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10250 1850 50  0001 C CNN
+F 2 "Connector_Wago:Wago_734-132_1x02_P3.50mm_Vertical" H 10250 1850 50  0001 C CNN
 F 3 "~" H 10250 1850 50  0001 C CNN
 	1    10250 1850
 	-1   0    0    1   
@@ -218,7 +218,7 @@ U 1 1 606A23E0
 P 8750 2800
 F 0 "J104" H 8722 2682 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 8722 2773 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8750 2800 50  0001 C CNN
+F 2 "Connector_Wago:Wago_734-132_1x02_P3.50mm_Vertical" H 8750 2800 50  0001 C CNN
 F 3 "~" H 8750 2800 50  0001 C CNN
 	1    8750 2800
 	-1   0    0    1   
@@ -229,7 +229,7 @@ U 1 1 606A2BF5
 P 10250 2800
 F 0 "J105" H 10222 2682 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 10222 2773 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10250 2800 50  0001 C CNN
+F 2 "Connector_Wago:Wago_734-132_1x02_P3.50mm_Vertical" H 10250 2800 50  0001 C CNN
 F 3 "~" H 10250 2800 50  0001 C CNN
 	1    10250 2800
 	-1   0    0    1   
@@ -278,17 +278,6 @@ F 3 "~" H 8900 4000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Switch:SW_Push SW101
-U 1 1 606B0668
-P 8900 4500
-F 0 "SW101" V 8854 4648 50  0000 L CNN
-F 1 "SW_Push" V 8945 4648 50  0000 L CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 8900 4700 50  0001 C CNN
-F 3 "~" H 8900 4700 50  0001 C CNN
-	1    8900 4500
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0112
 U 1 1 606B110A
 P 8900 4800
@@ -304,7 +293,7 @@ L Device:R_Small R104
 U 1 1 606B14B1
 P 8900 3650
 F 0 "R104" H 8841 3604 50  0000 R CNN
-F 1 "1k" H 8841 3695 50  0000 R CNN
+F 1 "1k5" H 8841 3695 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8900 3650 50  0001 C CNN
 F 3 "~" H 8900 3650 50  0001 C CNN
 	1    8900 3650
@@ -316,10 +305,6 @@ Wire Wire Line
 	8900 3450 8900 3550
 Wire Wire Line
 	8900 3750 8900 3850
-Wire Wire Line
-	8900 4150 8900 4300
-Wire Wire Line
-	8900 4700 8900 4800
 $Comp
 L power:+24V #PWR0113
 U 1 1 606D9966
@@ -336,60 +321,6 @@ Wire Wire Line
 Connection ~ 3700 2950
 Wire Wire Line
 	3700 2950 3200 2950
-$Comp
-L Device:LED D103
-U 1 1 606E14F1
-P 9700 4000
-F 0 "D103" V 9739 3882 50  0000 R CNN
-F 1 "LED" V 9648 3882 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 9700 4000 50  0001 C CNN
-F 3 "~" H 9700 4000 50  0001 C CNN
-	1    9700 4000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Switch:SW_Push SW102
-U 1 1 606E14F7
-P 9700 4500
-F 0 "SW102" V 9654 4648 50  0000 L CNN
-F 1 "SW_Push" V 9745 4648 50  0000 L CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 9700 4700 50  0001 C CNN
-F 3 "~" H 9700 4700 50  0001 C CNN
-	1    9700 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 606E14FD
-P 9700 4800
-F 0 "#PWR0114" H 9700 4550 50  0001 C CNN
-F 1 "GND" H 9705 4627 50  0000 C CNN
-F 2 "" H 9700 4800 50  0001 C CNN
-F 3 "" H 9700 4800 50  0001 C CNN
-	1    9700 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R108
-U 1 1 606E1503
-P 9700 3650
-F 0 "R108" H 9641 3604 50  0000 R CNN
-F 1 "1k" H 9641 3695 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 9700 3650 50  0001 C CNN
-F 3 "~" H 9700 3650 50  0001 C CNN
-	1    9700 3650
-	-1   0    0    1   
-$EndComp
-Text GLabel 9700 3450 1    50   Input ~ 0
-3V0
-Wire Wire Line
-	9700 3450 9700 3550
-Wire Wire Line
-	9700 3750 9700 3850
-Wire Wire Line
-	9700 4150 9700 4300
-Wire Wire Line
-	9700 4700 9700 4800
 $Comp
 L Device:Polyfuse_Small F101
 U 1 1 606F1D04
@@ -643,37 +574,90 @@ Wire Wire Line
 Wire Wire Line
 	2050 6450 1950 6450
 $Comp
-L TI:TPS709 U101
-U 1 1 60792795
-P 4900 3250
-F 0 "U101" H 4900 3775 50  0000 C CNN
-F 1 "TPS70930QDBVRQ1" H 4900 3684 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 4900 3250 50  0001 C CNN
-F 3 "https://www.ti.com/lit/gpn/tps709" H 4900 3250 50  0001 C CNN
-	1    4900 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 60797D46
-P 4250 3250
-F 0 "#PWR0101" H 4250 3000 50  0001 C CNN
-F 1 "GND" H 4255 3077 50  0000 C CNN
-F 2 "" H 4250 3250 50  0001 C CNN
-F 3 "" H 4250 3250 50  0001 C CNN
-	1    4250 3250
+P 4350 3450
+F 0 "#PWR0101" H 4350 3200 50  0001 C CNN
+F 1 "GND" H 4355 3277 50  0000 C CNN
+F 2 "" H 4350 3450 50  0001 C CNN
+F 3 "" H 4350 3450 50  0001 C CNN
+	1    4350 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4550 2950 3700 2950
-Wire Wire Line
-	4250 3250 4250 3050
-Wire Wire Line
-	4250 3050 4550 3050
-Wire Wire Line
-	5250 2950 5850 2950
-Connection ~ 5850 2950
-NoConn ~ 4550 3150
 Text Notes 6300 3450 0    50   ~ 0
-47u maximum
+2u minimum
+$Comp
+L Regulator_Linear:LT3080xST U101
+U 1 1 60982B2E
+P 4950 2950
+F 0 "U101" H 4950 3217 50  0000 C CNN
+F 1 "LT3080xST" H 4950 3126 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 4950 2650 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3080fc.pdf" H 3230 3720 50  0001 C CNN
+	1    4950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R101
+U 1 1 60983458
+P 4350 3200
+F 0 "R101" H 4291 3154 50  0000 R CNN
+F 1 "287k" H 4291 3245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4350 3200 50  0001 C CNN
+F 3 "~" H 4350 3200 50  0001 C CNN
+	1    4350 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 3050 5350 2950
+Wire Wire Line
+	5350 2950 5850 2950
+Connection ~ 5350 2950
+Connection ~ 5850 2950
+$Comp
+L Device:C_Small C101
+U 1 1 609864B0
+P 4000 3200
+F 0 "C101" H 3908 3154 50  0000 R CNN
+F 1 "10p" H 3908 3245 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4000 3200 50  0001 C CNN
+F 3 "~" H 4000 3200 50  0001 C CNN
+	1    4000 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 3100 4350 3100
+Wire Wire Line
+	4350 3100 4350 3050
+Wire Wire Line
+	4350 3050 4550 3050
+Connection ~ 4350 3100
+Wire Wire Line
+	4000 3300 4350 3300
+Wire Wire Line
+	4350 3300 4350 3450
+Connection ~ 4350 3300
+Text Notes 5150 2700 0    50   ~ 0
+1mA load for stability
+$Comp
+L power:GND #PWR0102
+U 1 1 6098F5E5
+P 5550 2200
+F 0 "#PWR0102" H 5550 1950 50  0001 C CNN
+F 1 "GND" H 5555 2027 50  0000 C CNN
+F 2 "" H 5550 2200 50  0001 C CNN
+F 3 "" H 5550 2200 50  0001 C CNN
+	1    5550 2200
+	1    0    0    -1  
+$EndComp
+Text Notes 4450 3400 0    50   ~ 0
+2,87V
+Wire Wire Line
+	8900 4150 8900 4800
+Text Notes 9150 4200 0    50   ~ 0
+Vf=1,4V@1mA
+Text Notes 9150 3700 0    50   ~ 0
+1mA @ 1,6V
 $EndSCHEMATC
