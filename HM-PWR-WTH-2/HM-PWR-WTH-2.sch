@@ -40,8 +40,8 @@ L Device:C_Small C103
 U 1 1 60679958
 P 2900 3200
 F 0 "C103" H 2992 3246 50  0000 L CNN
-F 1 "33u" H 2992 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2900 3200 50  0001 C CNN
+F 1 "100n" H 2992 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2900 3200 50  0001 C CNN
 F 3 "~" H 2900 3200 50  0001 C CNN
 	1    2900 3200
 	1    0    0    -1  
@@ -368,47 +368,14 @@ Connection ~ 2900 2950
 Wire Wire Line
 	2900 2950 2950 2950
 $Comp
-L Device:C_Small C110
-U 1 1 60748F7A
-P 8200 1200
-F 0 "C110" H 8292 1246 50  0000 L CNN
-F 1 "4u7" H 8292 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8200 1200 50  0001 C CNN
-F 3 "~" H 8200 1200 50  0001 C CNN
-	1    8200 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C111
 U 1 1 60749C96
 P 8550 1200
 F 0 "C111" H 8642 1246 50  0000 L CNN
-F 1 "4u7" H 8642 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8550 1200 50  0001 C CNN
+F 1 "33u" H 8642 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder" H 8550 1200 50  0001 C CNN
 F 3 "~" H 8550 1200 50  0001 C CNN
 	1    8550 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C112
-U 1 1 6074A0D1
-P 8900 1200
-F 0 "C112" H 8992 1246 50  0000 L CNN
-F 1 "4u7" H 8992 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8900 1200 50  0001 C CNN
-F 3 "~" H 8900 1200 50  0001 C CNN
-	1    8900 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C113
-U 1 1 6074F614
-P 9700 1200
-F 0 "C113" H 9792 1246 50  0000 L CNN
-F 1 "4u7" H 9792 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 9700 1200 50  0001 C CNN
-F 3 "~" H 9700 1200 50  0001 C CNN
-	1    9700 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -416,43 +383,12 @@ L Device:C_Small C114
 U 1 1 6074F61A
 P 10050 1200
 F 0 "C114" H 10142 1246 50  0000 L CNN
-F 1 "4u7" H 10142 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 10050 1200 50  0001 C CNN
+F 1 "33u" H 10142 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder" H 10050 1200 50  0001 C CNN
 F 3 "~" H 10050 1200 50  0001 C CNN
 	1    10050 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C115
-U 1 1 6074F620
-P 10400 1200
-F 0 "C115" H 10492 1246 50  0000 L CNN
-F 1 "4u7" H 10492 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 10400 1200 50  0001 C CNN
-F 3 "~" H 10400 1200 50  0001 C CNN
-	1    10400 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 1100 10050 1100
-Wire Wire Line
-	10050 1100 10400 1100
-Connection ~ 10050 1100
-Wire Wire Line
-	10400 1300 10050 1300
-Wire Wire Line
-	10050 1300 9700 1300
-Connection ~ 10050 1300
-Wire Wire Line
-	8200 1100 8550 1100
-Wire Wire Line
-	8550 1100 8900 1100
-Connection ~ 8550 1100
-Wire Wire Line
-	8900 1300 8550 1300
-Wire Wire Line
-	8550 1300 8200 1300
-Connection ~ 8550 1300
 Wire Wire Line
 	10050 2550 10050 2700
 Connection ~ 10050 2700
@@ -491,7 +427,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 1100 8550 1000
 Text Notes 6300 3350 0    50   ~ 0
-X7R
+X5R
 $Comp
 L Device:C_Small C118
 U 1 1 607A4AA8
@@ -607,6 +543,7 @@ F 0 "R101" H 4291 3154 50  0000 R CNN
 F 1 "287k" H 4291 3245 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4350 3200 50  0001 C CNN
 F 3 "~" H 4350 3200 50  0001 C CNN
+F 4 "5%" H 4250 3350 50  0000 C CNN "Tolerance"
 	1    4350 3200
 	-1   0    0    1   
 $EndComp
@@ -652,12 +589,62 @@ F 3 "" H 5550 2200 50  0001 C CNN
 	1    5550 2200
 	1    0    0    -1  
 $EndComp
-Text Notes 4450 3400 0    50   ~ 0
-2,87V
+Text Notes 4600 3400 0    50   ~ 0
+sets 2,87V  @ OUT
 Wire Wire Line
 	8900 4150 8900 4800
 Text Notes 9150 4200 0    50   ~ 0
 Vf=1,4V@1mA
 Text Notes 9150 3700 0    50   ~ 0
 1mA @ 1,6V
+$Comp
+L Mechanical:MountingHole H102
+U 1 1 609B0030
+P 5700 6600
+F 0 "H102" H 5800 6646 50  0000 L CNN
+F 1 "MountingHole" H 5800 6555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5700 6600 50  0001 C CNN
+F 3 "~" H 5700 6600 50  0001 C CNN
+	1    5700 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H101
+U 1 1 609B0960
+P 5700 6350
+F 0 "H101" H 5800 6396 50  0000 L CNN
+F 1 "MountingHole" H 5800 6305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580" H 5700 6350 50  0001 C CNN
+F 3 "~" H 5700 6350 50  0001 C CNN
+	1    5700 6350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2350 6050
+NoConn ~ 2350 6150
+NoConn ~ 2350 6250
+$Comp
+L Connector:Conn_01x01_Male J107
+U 1 1 609D9F36
+P 8750 2050
+F 0 "J107" H 8722 1982 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8722 2073 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 8750 2050 50  0001 C CNN
+F 3 "~" H 8750 2050 50  0001 C CNN
+	1    8750 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J108
+U 1 1 609DA7D9
+P 8750 2250
+F 0 "J108" H 8722 2182 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 8722 2273 50  0000 R CNN
+F 2 "Connector_Pin:Pin_D1.4mm_L8.5mm_W2.8mm_FlatFork" H 8750 2250 50  0001 C CNN
+F 3 "~" H 8750 2250 50  0001 C CNN
+	1    8750 2250
+	-1   0    0    1   
+$EndComp
+NoConn ~ 8550 2050
+NoConn ~ 8550 2250
+NoConn ~ 5700 6400
 $EndSCHEMATC
