@@ -20,3 +20,12 @@ required for stability of the LT3080 regulator.
 ![PCB back](./HM-PWR-WTH-2/HM-PWR-WTH-2_back.jpg?raw=true "PCB")
 ![PCB front](./HM-PWR-WTH-2/HM-PWR-WTH-2_front.jpg?raw=true "PCB")
 
+** Mounting plate **
+
+![Drilled holes](./pictures/Mounting_plate_holes.JPG?raw=true "Drilled holes")
+
+** Assembled **
+
+![Assembled PCB1](./pictures/Assembled_1.JPG?raw=true "Assembled")
+![Assembled PCB2](./pictures/Assembled_2.JPG?raw=true "Assembled")
+
